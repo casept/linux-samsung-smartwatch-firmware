@@ -76,7 +76,9 @@ pagc2g=16
 dacrate2xen=1
 txalpfbyp=1
 txalpfpu=1
-swctrlmap_2g=0x80008,0x22222222,0x2020202,0x12202,0x1ff
+# RF switch map from the Samsung Gear S (SM-R750) SEMCO BCM4334W nvram;
+# the Murata reference map left rinato's 2.4 GHz RX ~25 dB short.
+swctrlmap_2g=0x0c0c0c0c,0x12120202,0x02020202,0x11202,0x1ff
 swctrlmap_5g=0x40004,0x50505050,0x40404040,0x12202,0x2dc
 elna_off_gain_idx_2g=30
 elna_off_gain_idx_5g=35
